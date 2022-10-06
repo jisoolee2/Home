@@ -1,0 +1,80 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표만들기</title>
+    <style>
+    table{border: 2px solid black;
+        border-collapse: collapse;
+    }
+    td,th{ border: solid gray;
+    }
+    </style>
+</head>
+<body>
+<table>
+    <caption> 표 예제(1) </caption>
+    <thead> <tr><th>년도</th><th>토끼</th><th>시라소니</th><th>당근</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>1900</td><td>400</td><td>500</td><td>600</td></tr>
+    <tr><td>2000</td><td>400</td><td>500</td><td>600</td></tr>
+    <tr><td>2010</td><td>400</td><td>500</td><td>600</td></tr>
+    <tr><td>2020</td><td>400</td><td>500</td><td>600</td></tr>
+    </tbody>
+    <tfoot>
+    <tr><td>힙계</td><td>00</td><td>00</td><td>00</td></tr>
+    </tfoot>
+</table>
+</body>
+</html>
+ -->
+
+<!--
+* 표만들기 관련 태그정리
+<style> table { border: ; border-collapese : - } 뼈대
+         td,tr { border : ; }
+<table>  -> 처음 table 태그 열기
+< thead> 태그 열고 맨위에 첫행
+<tbody>  내용물 태그 <tr> 행 / <th> 긱 element
+<tfoot> 마지막 행
+
+</table>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표만들기 - 셀병합</title>
+    <style>
+    table{border: 2px solid black;
+        border-collapse: collapse;
+    }
+    td,th{ border: solid gray;
+    }
+    </style>
+</head>
+<body>
+<table>
+    <caption> 표 예제(2) </caption>
+    <thead> <tr><th>년도</th><th>토끼</th><th>시라소니</th><th>당근</th></tr>
+    </thead>
+    <tbody>
+    <tr><td rowspan="4">1900</td> <td>400</td><td>500</td><td>600</td></tr>
+    <tr><td>400</td><td>500</td><td>600</td></tr>
+    <tr><td>400</td><td>500</td><td>600</td></tr>
+    <tr><td>400</td><td>500</td><td>600</td></tr>
+    </tbody>
+    <tfoot>
+    <tr><td>힙계</td><td colspan="3">00</td></tr>
+    </tfoot>
+</table>
+</body>
+</html>
+
+<!--
+* 셀 병합 : 관련 태그 시작점에 rowspan = ' ',  colspan = ' '
+-->
+
