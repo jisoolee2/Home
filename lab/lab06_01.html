@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>태그이름선택자</title>
+  <style>
+    h3,ul.blue{
+      color: blue;} /*ul속 만 선택하고싶을때 */
+    #lab{
+      color : deeppink;}
+    #ss{
+      background: lightyellow;}
+    ul strong{
+      color:purple;} /* 자손 */
+    div.blue{ background: lightgreen;
+
+    }/*학습내용만 배경색 깔고싶어-> 가상클래스*/
+    header>ul{
+        list-style: none;
+    }/* header li (가능) header ul (가능) 질문 : 자식이여도 손자방식 해도 문법상 오류x?? */
+    a:link,a:visited {
+        text-decoration: none;
+        color: black;
+    background: lightpink;
+    display: block;
+    width: 120px;
+    border: 1px solid gray;
+    margin-bottom: 2px;
+    text-align: center;
+
+    }
+    a:hover, a:active {
+        background: lightgreen;
+        color:firebrick;
+    }
+
+  </style>
+</head>
+<body>
+<h3>Web programming </h3>
+<hr>
+<header>
+<ul>
+    <li><a href="/index.html"> HOME</a></li>
+    <li><a href="/lab/lab06_01.html.html.html"> LECTURE NOTES</a></li>
+    <li> <a href="/reports/reports.html"> REPORTS</a></li>
+    <li><a href="/q&a">Q&amp;A ,</a></li>
+</ul>
+</header>
+
+<div class = "blue">  학습내용 </div>
+<ul class = "blue">
+  <li> HTML </li>
+  <li> <strong> CSS </strong> </li>
+  <li> JAVA script</li>
+</ul>
+
+<div id = 'lab'> 실습 </div>
+<ul id = "ss">
+  <li>인라인 스타일시트</li>
+  <li> 내부 스타일시트 </li>
+  <li> 외부 스타일시트 </li>
+</ul>
+</body>
+</html>
