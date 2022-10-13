@@ -1,0 +1,90 @@
+<head>
+    <meta charset="UTF-8">
+    <title>과제02</title>
+</head>
+<style>
+     span { color: red;}
+    form> p{
+       font-weight: bold;
+        width: 800px;
+        padding-left: 10px;
+        background-color: lightblue;}
+    div{ display: inline-block;
+    }
+    div.qs{
+        margin-left: 8px;
+        text-align: right;
+        width: 130px;
+        padding-right: 8px;
+        margin-bottom: 7px;
+
+    }
+
+
+
+
+
+
+
+
+</style>
+<body  >
+<h2> 취업 정보 계정 만들기 </h2>
+<span style="font-size: 10pt "> * 필수 입력 항목</span>
+<form>
+    <p>  &nbsp;기본 정보 </p>
+    <div class="qs"> 이 름<span>*</span> </div>
+    <div class ="ans"><input type="text" size="8" maxlength="8" ></div><br>
+    <div class="qs"> 이메일<span>*</span></div>
+    <div class="ans"><input type="email" size="15" maxlength="15" placeholder='id@domain_name'></div><br>
+     <div class="qs">암호<span>*</span></div>
+    <div class="ans"><input type="password" size="12" maxlength="12"></div> <br>
+     <div class="qs">암호 확인<span>*</span></div>
+    <div class="ans"><input type="password" size="12" maxlength="12"> </div><br>
+    <div class="qs">모바일 폰<span>*</span> </div>
+    <div class="ans"><input type=“tel” size="13" maxlength="13" placeholder='010-0000-0000'></div> <br>
+    <div class="qs"> 개인 홈페이지 </div>
+    <div class="ans"><input type=“url” size="30" maxlength="30" placeholder='http://'></div> <br>
+    <div class="qs">주소<span>*</span></div>
+    <div class="ans"><input type="text"  size="30" maxlength="30"></div> <br>
+
+    <p>&nbsp; 학 력 </p>
+
+    <div class="qs">학교 명<span>*</span></div>
+    <div class="ans"><input type="text" size="12" maxlength="12" ></div><br>
+    <div class="qs">전 공<span>*</span> </div>
+    <div class="ans"><input type="text" size="12" maxlength="12"></div><br>
+    <div class="qs">졸업 여부<span>*</span></div>
+    <div class="ans"> <select name="major">
+                    <option value="1" selected > --선택--  </option>
+                    <option value="2"> 졸업예정 </option>
+                    <option value="3"> 졸업 </option>
+    </select> </div><br>
+    <div class="qs"> 졸업(예정)일</div>
+    <div class="ans"><input type="date" value="연도-월-일" > </div><br>
+
+    <p> &nbsp;업무 경력 </p>
+    <div class="qs">근무업체명 </div>
+    <div class="ans"><input type="text"  size="20" maxlength="20"> </div><br>
+    <div class="qs">직 위 </div>
+    <div class="ans"><input type="text"  size="10" maxlength="10"></div> <br>
+    <div class="qs">담당 업무 </div>
+    <div class="ans"><textarea cols="80" rows="10"> 이전업체에서 담당한 업무를 기술하시오.  </textarea> </div> <br>
+    <div class="qs">근무년수 </div>
+    <div class="ans"><input type="number" min="0.0" max="10.0" step="0.5">년 </div><br>
+
+    <p> &nbsp; 자기소개서 </p>
+    <div class="qs">첨부 파일</div>
+    <div class="ans"><input type="file"></div>  <br>
+    <div style="margin-left: 200px">
+    <button type="submit"> 제출 </button>
+    <button type="reset"> 재작성 </button>
+    </div>
+
+
+
+
+
+</form>
+</body>
+</html>
