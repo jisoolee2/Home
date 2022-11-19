@@ -1,70 +1,78 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>과제02</title>
 </head>
 <style>
-    span { color: red;}
-    input.box{
-
+     span>span { color: red;}
+    form> p{
+       font-weight: bold;
+        width: 800px;
+        padding-left: 10px;
+        background-color: lightblue;}
+    span{
+        display: inline-block;
     }
-    div {
+    span.qs{
         margin-left: 8px;
         text-align: right;
         width: 130px;
         padding-right: 8px;
-        display: inline-block;
+        margin-bottom: 8px;
     }
-    form> p{
-        font-weight: bold;
-        width: 800px;
-        padding-left: 10px;
-        background-color: lightblue;
-    }
-
-
 
 </style>
-<body>
+<body  >
 <h2> 취업 정보 계정 만들기 </h2>
-<span style="font-size: 10pt"> * 필수 입력 항목</span>
+<span><span style="font-size: 10pt "> * 필수 입력 항목</span></span>
 <form>
-    <p>  기본 정보 </p>
-    <div> 이 름<span>*</span>
-    <input type="text" class="box" size="8" maxlength="8" > <br>
-     이메일<span>*</span> <input type="email" class="box" size="15" maxlength="15" placeholder='id@domain_name'><br>
-    암호<span>*</span> <input type="password" class="box" size="12" maxlength="12"><br>
-    암호 확인<span>*</span> <input type="password" class="box" size="12" maxlength="12"><br>
-    모바일 폰<span>*</span> <input type=“tel” class="box" size="13" maxlength="13" placeholder='010-0000-0000'><br>
-    개인 홈페이지  <input type=“url” class="box" size="30" maxlength="30" placeholder='http://'><br>
-    주소<span>*</span> <input type="text" class="box" size="30" maxlength="30"><br>
-    </div>
-    <p> 학 력 </p>
+    <p>  &nbsp;기본 정보 </p>
+    <span class="qs"> 이 름<span>*</span> </span>
+    <span class ="ans"><input type="text" size="8" maxlength="8" ></span><br>
+    <span class="qs"> 이메일<span>*</span></span>
+    <span class="ans"><input type="email" size="15" maxlength="15" placeholder='id@domain_name'></span><br>
+     <span class="qs">암호<span>*</span></span>
+    <span class="ans"><input type="password" size="12" maxlength="12"></span> <br>
+     <span class="qs">암호 확인<span>*</span></span>
+    <span class="ans"><input type="password" size="12" maxlength="12"> </span><br>
+    <span class="qs">모바일 폰<span>*</span> </span>
+    <span class="ans"><input type=“tel” size="13" maxlength="13" placeholder='010-0000-0000'></span> <br>
+    <span class="qs"> 개인 홈페이지 </span>
+    <span class="ans"><input type=“url” size="30" maxlength="30" placeholder='http://'></span> <br>
+    <span class="qs">주소<span>*</span></span>
+    <span class="ans"><input type="text"  size="30" maxlength="30"></span> <br>
 
-    <div>
-    학교 명<span>*</span> <input type="text" size="12" maxlength="12" ><br>
-    전 공<span>*</span> <input type="text" size="12" maxlength="12"><br>
-    졸업 여부<span>*</span> <select name="major">
-        <option value="1" selected > --선택--  </option>
-        <option value="2"> 졸업예정 </option>
-        <option value="3"> 졸업 </option>
-         </select> <br>
-     졸업(예정)일 <input type="date" value="연도-월-일" > <br>
-    </div>
-    <p> 업무 경력 </p>
-    <div>
-    근무업체명 <input type="text"  size="20" maxlength="20"> <br>
-    직 위 <input type="text"  size="10" maxlength="10"> <br>
-    담당 업무 <textarea cols="80" rows="10"> 이전업체에서 담당한 업무를 기술하시오.  </textarea> <br>
-    근무년수 <input type="number" min="0.0" max="10.0" step="0.5">년 <br>
-    </div>
+    <p>&nbsp; 학 력 </p>
+    <span class="qs">학교 명<span>*</span></span>
+    <span class="ans"><input type="text" size="12" maxlength="12" ></span><br>
+    <span class="qs">전 공<span>*</span> </span>
+    <span class="ans"><input type="text" size="12" maxlength="12"></span><br>
+    <span class="qs">졸업 여부<span>*</span></span>
+    <span class="ans"> <select name="major">
+                    <option value="1" selected > --선택--  </option>
+                    <option value="2"> 졸업예정 </option>
+                    <option value="3"> 졸업 </option>
+    </select> </span><br>
+    <span class="qs"> 졸업(예정)일</span>
+    <span class="ans"><input type="date" value="연도-월-일" > </span><br>
 
-    <p> 자기소개서 </p>
-    첨부 파일 <input type="file">  <br>
-    <div style="margin-left: 200px"  >
+    <p> &nbsp;업무 경력 </p>
+    <span class="qs">근무업체명 </span>
+    <span class="ans"><input type="text"  size="20" maxlength="20"> </span><br>
+    <span class="qs">직 위 </span>
+    <span class="ans"><input type="text"  size="10" maxlength="10"></span> <br>
+    <span class="qs">담당 업무 </span>
+    <span class="ans"><textarea cols="80" rows="10"> 이전업체에서 담당한 업무를 기술하시오.  </textarea> </span> <br>
+    <span class="qs">근무년수 </span>
+    <span class="ans"><input type="number" min="0.0" max="10.0" step="0.5">년 </span><br>
+
+
+    <p> &nbsp; 자기소개서 </p>
+    <span class="qs">첨부 파일</span>
+    <span class="ans"><input type="file"></span>  <br>
+    <span style="margin-left: 200px; margin-top: 8px">
     <button type="submit"> 제출 </button>
     <button type="reset"> 재작성 </button>
-    </div>
+    </span>
 
 
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>과제 3 - 자바스크립트 프로그래밍 (1)</title>
+
+    <script>
+        //이진수 -> 10진수 -> 16진수 //
+        function get_Hnum(B_num){
+            var decimal = parseInt(B_num, 2);
+            var H_num = decimal.toString(16);
+            return H_num
+            }
+
+
+
+
+    </script>
+</head>
+<body>
+<h3> 2진수 > 16진수 변환기</h3> <hr>
+<script>
+    var B_num = prompt('2진수를 입력하시오.');
+    var Hex_num = get_Hnum(B_num)
+    document.write('<p> 2진수 '+B_num+'의 16진수는 ' + Hex_num + ' 입니다. </p>')
+
+
+</script>
+
+</body>
+</html>

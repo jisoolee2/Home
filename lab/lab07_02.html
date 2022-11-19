@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+     table {
+         border : 0px solid white;
+           border-collapse: collapse;
+     }
+     tbody tr:nth-child(even) { /* 짝수 <tr>에 적용*/
+                       background : lightSteelBlue ; }
+     tbody tr:hover{
+         background-color: lightpink;
+     }
+     td, th {
+         /*border: 1px dotted green;*/
+         height: 30px;
+         width: 100px;
+         text-align: right;
+         padding: 10px;
+         border-bottom: solid gray;
+     }
+     thead th {
+         text-align: center;
+     }
+     .t1 { text-align: center;}
+
+</style>
+</head>
+<body>
+<table border='1'>
+<caption>1900 ~ 1903 개체수 추이 <caption>
+<thead>
+<tr> <th class="t1" >년도</th> <th>토끼</th>
+<th>시라소니</th><th>당근</th></tr>
+</thead>
+<tbody>
+<tr> <td class="t1" >1900</td> <td>30,000</td>
+<td>4,000</td> <td>48,300</td></tr>
+<tr> <td class="t1" >1901</td> <td>47,200</td>
+<td>6,100</td> <td>48,200</td></tr>
+<tr> <td class="t1" >1902</td> <td>70,200</td>
+<td>9,800</td> <td>41,500</td></tr>
+<tr> <td class="t1" >1903</td> <td>77,400</td>
+<td>35,200</td>
+<td>38,200</td></tr>
+</tbody>
+<tfoot>
+<tr> <th class="t1">평균</th> <th>56,200</th>
+<th>13,775</th> <th>44,050</th></tr>
+</tfoot></table>
+</body>
+</html>

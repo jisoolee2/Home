@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array 내장 객체</title>
+    <script>
+        function plot(data){
+            document.write('<p>'+data+'</p>')
+            for (var i=0; i<data.length; i++) {
+                var size = data[i];
+                while(size>0) {
+                    document.write('*')
+                    size--;
+                }
+                document.write(data[i] + '<br>')
+            }
+        }
+    </script>
+</head>
+<body>
+<h2> array 예제 </h2> <hr>
+<script>
+    var cities = ['seoul','busan','paris'];
+    var plots_data = [20,5,8,15,18];
+
+    for (var i=0; i<cities.length; i++){
+        document.write('<p>' + cities[i]);
+
+    }
+    plot(plots_data)
+
+    var data2 = [5,2]
+    var x = plots_data.concat(data2);
+    var y = plots_data.reverse();
+    document.write('<p>'+y+'</p>');
+
+    plots_data.sort();
+    document.write('<p>'+plots_data+'</p>')
+//문자열로 처리//
+</script>
+</body>
+</html>

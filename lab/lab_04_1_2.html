@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>표만들기 - 셀병합</title>
+    <style>
+    table{border: 1px white;
+        border-collapse: collapse;
+    }
+    td,th{ border-bottom: solid gray;
+    text-align: right;
+    padding: 10px; }
+    thead th{
+        background-color: gray;
+        color: white;
+        text-decoration: underline;
+
+    }
+    tr:nth-child(even) { background-color: lightgrey;
+
+    }
+    tr:hover {
+        color:darkred;
+    }
+
+
+
+    </style>
+</head>
+<body>
+<table>
+    <caption> 표 예제(3) </caption>
+    <thead> <tr><th>년도</th><th>토끼</th><th>시라소니</th></tr>
+    </thead>
+    <tbody>
+    <tr><td rowspan="3">1900</td><td colspan="2">400</td></tr>
+    <tr><td>400</td><td>500</td></tr>
+    <tr><td>400</td><td>500</td></tr>
+    </tbody>
+    <tfoot>
+    <tr><td>힙계</td><td colspan="2">00</td></tr>
+    </tfoot>
+</table>
+</body>
+</html>
