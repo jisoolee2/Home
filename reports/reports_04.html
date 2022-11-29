@@ -15,7 +15,7 @@
             }
 
         function new_row(prev_row){
-            var nrow = [];
+            var nrow = new Array();
             var p_len = prev_row.length
             for(i=0;i<=p_len;i++) {
                 if (i == 0)
@@ -30,7 +30,7 @@
 
         function pascals(){
             var n = document.getElementById('size').value;
-            var p_row = [];
+            var p_row = new Array();
             document.getElementById("draw_area").innerHTML =''
             for(i=0;i<=n;++i){
                 var f_row = new_row(p_row);
@@ -50,7 +50,7 @@
 
 </head>
 <body>
-<div class = 'container-sm mt-5  '>
+<div class = 'container-sm mt-5'>
     <div class ='h3'> 2진수 변환기 </div>
     <div class="mb-3">
         <label class = 'form-label text-primary'> 2진수 : <input type="text" id="digit" size="20"></label>
