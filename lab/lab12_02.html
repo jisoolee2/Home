@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 이벤트 처리 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        p = document.querySelector('#msg')
+        /* Dom 객체 함수 대응 방법 (2)*/
+        function init() {
+            /* p=document.getElementById('msg');
+            p.onmouseover = over;
+            p.onmouseout = out;
+       }*/
+            /* DOM객체 메쏘드 호출
+        function over(){
+            p.style.backgroundColor='orchid';
+        }
+        function out(){
+            p.style.backgroundColor='orange';
+
+        }
+            p = document.getElementById('msg')
+            p.addEventListener('mouseover',over);
+            p.addEventListener('mouseout',out);*/
+            var p = document.getElementById('msg');
+            p.onmouseout= function (){
+                this.style.backgroundColor='orange';
+            }
+            p.onmouseout= function (){
+                this.style.backgroundColor='orchid';
+            }
+        }
+
+    </script>
+</head>
+<body onload="init()">
+<h2> 이벤트 처리 예시 </h2>
+<p id="msg"> 여기에 마우스를 위치시켜보세요 </p>
+<!--<p onmouseout="this.style.backgroundColor='orchid'" onmouseover="this.style.backgroundColor='white'">여기에 마우스를 위치시켜보세요</p>-->
+
+</body>
+
+
+</html>
+
+
+
