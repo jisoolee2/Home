@@ -13,30 +13,21 @@
 <body>
 <h2>자바 스크립트 연습</h2> <hr>
 <script>
-  var a =1;
-  var b = a++;
-  var c = 1;
-  var d = ++c;
-  document.write('<p>변수a의 값 :'+ a +'</p>')
-  document.write('<p>변수b의 값 :'+ b +'</p>')
-  document.write('<p>변수c의 값 :'+ c +'</p>')
-  document.write('<p>변수d의 값 :'+ d +'</p>')
-
-
-  var greeting1 = 'hello';
-  var greeting2 = 'welcome';
-  str1 = greeting1 + greeting2;
-  document.write('<p>' + str1 + '</p>');
-  str2 = greeting1 + 2022;
-  document.write('<p>' + str2 +'</p>');
-
-  console.log('변수a의 값 :'+ a )
-  console.log('변수b의 값 :'+ b )
-  console.log('변수c의 값 :'+ c )
-  console.log('변수d의 값 :'+ d )
-
-
-
+  var literal_circle = { // same as new Object()
+radius: 10,
+get_area: function () {
+var self = this ;
+console.log(this) ;
+document.write("<br>변경 전 반지름: " + this.radius) ;
+var increase_radius = function () {
+self.radius = 20 ;
+};
+increase_radius() ;
+document.write("<br>변경 후 반지름: " + this.radius)
+return Math.PI * Math.pow(this.radius, 2) ;
+}
+} ;
+document.write("<br>원 면적: " + literal_circle.get_area()) ;
 
 </script>
 </body>

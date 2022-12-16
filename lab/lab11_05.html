@@ -9,6 +9,20 @@
 <h2> 자동차 객체 만들기 </h2> <hr>
 
 <script>
+    function f(num) {
+  var ns ;
+ switch (num) {
+    case 1: ns = 'one' ;
+    case 2: ns = 'two' ;
+    case 3: ns = 'three' ;
+    default: ns = 'etc' ;
+}
+     return ns
+}
+document.write(f(1)) ;
+
+
+
     var my_car= new Object();
     my_car.maker = 'handai';
     my_car.model = 'grandeur';
