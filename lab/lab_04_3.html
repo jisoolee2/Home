@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>텍스트입력요소</title>
+</head>
+<body>
+<h2> 자바스크립트 </h2>
+<hr>
+
+<SCRIPT>
+    var year = 2021;
+function ages() {
+var year= '' ;
+if (--this.year>2000) {
+     year = 'MZ' ;
+      } else {
+          year = 'not MZ' ;
+}
+return year ;
+}
+document.write(ages()) ;
+document.write(year) ;
+
+
+function f1(v) {
+   return v+1 ;
+}
+function f() {
+   var v=2, o=3 ;
+   o = f1(4) ;
+   document.write('<br>'+v + ','  + o) ;
+}
+f() ;
+
+
+
+</SCRIPT>
+<script>
+
+
+
+function get_city() {
+  var cities = document.getElementsByName("city") ;
+  var born_city ;
+  for (var i=0; i<cities.length; i++) {
+      if (cities[i].checked) {
+        born_city = cities[i].value ;
+      }
+  }
+  alert(cities.length + born_city) ;
+}
+</script>
+...
+<form>
+거주지: <input type="radio" name="city" value="seoul" checked>서울
+        <input type="radio" name="city" value="busan">부산
+        <input type="radio" name="city" value="incheon">인천
+           <input type="radio" name="city" value="etc">기타
+<input type="button" value="등 록" onclick="get_city()">
+</form>
+</body>
+</html>
+
+<!--
+출신국 : <input type="text" size="14" name="home_country" list="contries">
+              <datalist id ='contries'>
+              여기에서 list의 속성값과 datalist id 의 속상값을 같게두고 나타내야함
+
+-->
